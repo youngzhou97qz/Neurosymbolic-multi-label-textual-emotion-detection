@@ -425,7 +425,7 @@ def outputs():
     pred_1, pred_2, pred_3, pred_4, label_1 = [], [], [], [], []
     
     model_1 = Dict_model().to(device)
-    model_1.load_state_dict(torch.load(log_dir + 'wotext_4_2.41.pt'))
+    model_1.load_state_dict(torch.load(log_dir + 'wotext_4_xx.pt'))
     model_1.eval()
     with torch.no_grad():
         test_iterator = data_loader(test_set, batch_size=BATCH)
@@ -441,7 +441,7 @@ def outputs():
     label_1 = torch.cat(label_1, dim=0)
     
     model_1 = Dict_model().to(device)
-    model_1.load_state_dict(torch.load(log_dir + 'wotext_3_2.40.pt'))
+    model_1.load_state_dict(torch.load(log_dir + 'wotext_3_xx.pt'))
     model_1.eval()
     with torch.no_grad():
         test_iterator = data_loader(test_set, batch_size=BATCH)
@@ -455,7 +455,7 @@ def outputs():
     pred_2 = torch.cat(pred_2, dim=0)
     
     model_1 = Dict_model().to(device)
-    model_1.load_state_dict(torch.load(log_dir + 'wotext_2_2.38.pt'))
+    model_1.load_state_dict(torch.load(log_dir + 'wotext_2_xx.pt'))
     model_1.eval()
     with torch.no_grad():
         test_iterator = data_loader(test_set, batch_size=BATCH)
@@ -469,7 +469,7 @@ def outputs():
     pred_3 = torch.cat(pred_3, dim=0)
     
     model_1 = Dict_model().to(device)
-    model_1.load_state_dict(torch.load(log_dir + 'wotext_1_2.38.pt'))
+    model_1.load_state_dict(torch.load(log_dir + 'wotext_1_xx.pt'))
     model_1.eval()
     with torch.no_grad():
         test_iterator = data_loader(test_set, batch_size=BATCH)
